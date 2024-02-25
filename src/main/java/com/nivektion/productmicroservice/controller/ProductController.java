@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/products")
-public class Controller {
+public class ProductController {
   //MODEL
   private IProductRepository iProductRepository;
 
   @Autowired
-  public Controller(IProductRepository iProductRepository) {
+  public ProductController(IProductRepository iProductRepository) {
     this.iProductRepository = iProductRepository;
   }
 
